@@ -3,6 +3,8 @@ package com.techsphere.beautySphere.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.techsphere.beautySphere.dto.AgendamentoDTO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -30,12 +32,19 @@ public class Agendamento {
 	}
 
 	public Agendamento(Long id, LocalDate data, LocalTime hora, String servico, Cliente cliente) {
-		super();
 		this.id = id;
 		this.data = data;
 		this.hora = hora;
 		this.servico = servico;
 		this.cliente = cliente;
+	}
+	
+	public Agendamento(AgendamentoDTO dto) {
+		this.id = dto.id;
+		this.data = dto.data;
+		this.hora = dto.hora;
+		this.servico = dto.servico;
+		this.cliente = dto.cliente;
 	}
 
 	public Long getId() {

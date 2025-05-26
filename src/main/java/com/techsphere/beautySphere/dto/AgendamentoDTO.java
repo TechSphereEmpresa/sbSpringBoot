@@ -18,7 +18,7 @@ public class AgendamentoDTO {
 	 
 	@ManyToOne
     @JoinColumn(name = "cliente_id")
-	private Cliente cliente;
+	public Cliente cliente;
 	
 	public AgendamentoDTO() {
 	}

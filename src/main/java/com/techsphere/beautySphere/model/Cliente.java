@@ -1,5 +1,7 @@
 package com.techsphere.beautySphere.model;
 
+import com.techsphere.beautySphere.dto.ClienteDTO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,6 +25,12 @@ public class Cliente {
 		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
+	}
+	
+	public Cliente(ClienteDTO dto) {
+		this.id = dto.id;
+		this.nome = dto.nome;
+		this.telefone = dto.telefone;	
 	}
 
 	public Long getId() {
