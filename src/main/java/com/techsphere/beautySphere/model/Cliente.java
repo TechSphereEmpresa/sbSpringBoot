@@ -19,10 +19,10 @@ public class Cliente {
 	public Cliente() {
 	}
 
-	public Cliente(Long id, String nome, String numero) {
+	public Cliente(Long id, String nome, String telefone) {
 		this.id = id;
 		this.nome = nome;
-		this.telefone = numero;
+		this.telefone = telefone;
 	}
 
 	public Long getId() {
@@ -41,11 +41,11 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getNumero() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setNumero(String numero) {
-		this.telefone = numero;
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 }
