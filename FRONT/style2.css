@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
   --bg: #805454;
   --text: #222;
@@ -49,9 +52,11 @@ header {
 header h1 {
     color: white;
     font-size: 50px;
-    font-family: Kalnia;
+    font-family: ;
     font-weight: 400;
 }
+
+
 
 .controls {
   display: flex;
@@ -62,7 +67,7 @@ header h1 {
 
 #month-year{
   color: #410C0C;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
