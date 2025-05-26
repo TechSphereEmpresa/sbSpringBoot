@@ -27,7 +27,7 @@ body {
 }
 
 .calendar-container{
-  padding-top: 60px;
+  padding-top: 0px;
   z-index: 2;
 }
 
@@ -43,20 +43,28 @@ body {
 header {
   grid-column: span 2;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
-  margin: 0;
-  color: #fff ;
-  font-family: Montserrat;
+    color: white;
+    font-size: 50px;
+    font-family: Kalnia;
+    font-weight: 400;
 }
 
 .controls {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 0 30px 20px;
+}
+
+#month-year{
+  color: #410C0C;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 button {
@@ -74,9 +82,11 @@ button:hover {
 
 .calendar {
   background-color: var(--card);
-  padding: 10px;
+  padding-top: 20px;
   border-radius: 8px;
   width: 500px ;
+  height: 380px;
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
 }
 
 .weekdays {
@@ -84,6 +94,8 @@ button:hover {
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
   font-weight: bold;
+  color: #410C0C;
+  padding-bottom: 2rem;
 }
 
 .days {
@@ -105,14 +117,6 @@ button:hover {
   color: white;
 }
 
-.controls{
-  padding-left: 350px ;
-  padding-bottom: 20px;
-}
-
-#month-year{
-  color: #fff;
-}
 
 .day.today {
   border: 2px solid var(--primary);
@@ -123,11 +127,17 @@ button:hover {
   color: white;
 }
 
+#selected-date{
+  color: #410C0C;
+}
+
 .sidebar {
   background-color: var(--card);
   padding: 10px;
   border-radius: 8px;
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
   z-index: 2;
+  width: 400px;
 }
 
 #event-list {
