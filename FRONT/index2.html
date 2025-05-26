@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautySphere</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautySphere</title>
+  <link rel="stylesheet" href="index2.html">
 </head>
-
 <body>
-    <img id="tesoura-background" src="/FRONT/assets/tesoura.svg" alt="">
 
-    <header>
-        <div class="logout" id="logout-off">
-            <h3>Sair</h3>
-            <img src="/FRONT/assets/logout.svg" alt="Sair">
-        </div>
-        <h1>BeautySphere</h1>
-        <a href="">
-            <div class="logout">
-                <h3>Sair</h3>
-                <img src="/FRONT/assets/logout.svg" alt="Sair">
-            </div>
-        </a>
-    </header>
+<div class="container">
+  <header>
+    <h1>Calendário</h1>
+    <div class="controls">
+      <button id="prev-month">◀</button>
+      <span id="month-year"></span>
+      <button id="next-month">▶</button>
+    </div>
+  </header>
 
-    <main>
-        <section id="section-calendar">
-            <h2>2025, janeiro</h2>
-            <div class="calendar">
-                <ul class="weeks">
-                    <li>D</li>
-                    <li>S</li>
-                    <li>T</li>
-                    <li>Q</li>
-                    <li>Q</li>
-                    <li>S</li>
-                    <li>S</li>
+  <div class="calendar">
+    <div class="weekdays">
+      <div>D</div>
+      <div>S</div>
+      <div>T</div>
+      <div>Q</div>
+      <div>Q</div>
+      <div>S</div>
+      <div>S</div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+
+  <div class="sidebar">
+    <h2 id="selected-date">Selecione um dia</h2>
+    <div id="event-list"></div>
+    
+    <input type="time" id="event-time">
+    <input type="text" id="event-input" placeholder="Digite um evento">
+    <button id="add-event">Adicionar Evento</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
                 </ul>
                 <ul class="days"></ul>
                 <ul class="days" id="semana"></ul>
