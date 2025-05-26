@@ -51,12 +51,10 @@ header {
 
 header h1 {
     color: white;
-    font-size: 50px;
-    font-family: ;
+    font-size: 70px;
+    font-family: Kalnia;
     font-weight: 400;
 }
-
-
 
 .controls {
   display: flex;
@@ -79,18 +77,26 @@ button {
   padding-bottom: 2px;
   cursor: pointer;
   border-radius: 5px;
+   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
   opacity: 0.8;
 }
 
+#add-event{
+  width: 200px;
+  height: 30px;
+  font-size: 15px ;
+}
+
 .calendar {
   background-color: var(--card);
   padding-top: 20px;
-  border-radius: 8px;
+  border-radius: 24px;
   width: 500px ;
   height: 380px;
+  margin-left: 90px;
   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
 }
 
@@ -107,6 +113,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
+  padding: 5px ;
 }
 
 .day {
@@ -134,12 +141,14 @@ button:hover {
 
 #selected-date{
   color: #410C0C;
+  text-transform: uppercase;
 }
 
 .sidebar {
   background-color: var(--card);
   padding: 10px;
-  border-radius: 8px;
+  margin-right: 100px;
+  border-radius: 24px;
   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
   z-index: 2;
   width: 400px;
@@ -181,11 +190,18 @@ button:hover {
 input {
   width: 100%;
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
+  border: none ;
 }
 
 input[type="time"] {
   margin-top: 5px;
+}
+
+input[type="text"] {
+  padding: 8px;
 }
 
 @media (max-width: 800px) {
