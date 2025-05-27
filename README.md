@@ -27,14 +27,6 @@ Back-end:
 Java com Spring Boot
 ```
 
-## Executando localmente
-
-### Requerimentos
-Para a construção dessa aplicação é necessário:
-- 
--
--
-
 ## Autores 
 - *Nomes*: Alanna Machado, Eduarda Leal, Kauã Rizzo, Letícia Farias.
 - *Githubs*: [**@AlannaFm**](https://github.com/AlannaFm), [**@eduarda-leal**](https://github.com/eduarda-leal), [**@rizzoka**](https://github.com/rizzoka), [**@leticia-farias**](https://github.com/leticia-farias).
