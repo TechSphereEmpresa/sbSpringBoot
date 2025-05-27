@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautySphere</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <img id="tesoura-background" src="/FRONT/assets/tesoura.svg" alt="">
+
+<div class="container">
+  <header>
+    <h1>BeautySphere</h1>
+  </header>
+  
+  <div class="calendar-container">
+    <div class="calendar">
+      <div class="controls">
+        <button id="prev-month">◀</button>
+        <span id="month-year"></span>
+        <button id="next-month">▶</button>
+      </div>
+      <div class="weekdays">
+        <div>D</div>
+        <div>S</div>
+        <div>T</div>
+        <div>Q</div>
+        <div>Q</div>
+        <div>S</div>
+        <div>S</div>
+      </div>
+      <div class="days" id="days"></div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2 id="selected-date">Selecione um dia</h2>
+    <div id="event-list"></div>
+    
+    <input type="time" id="event-time">
+    <input type="text" id="event-input" placeholder="Digite o nome do cliente">
+      <select id="event-service">
+      <option value="" disabled selected>Escolha um serviço</option>
+      <option value="Corte">Corte</option>
+      <option value="Manicure">Manicure</option>
+      <option value="Escova">Escova</option>
+      <option value="Maquiagem">Maquiagem</option>
+    </select>
+    <button id="add-event">Adicionar Agendamento</button>
+  </div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
