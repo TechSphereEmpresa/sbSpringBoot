@@ -10,7 +10,7 @@ Este é um sistema web desenvolvido para gerenciamento de agendamentos de um sal
 ## Funcionalidades
 - Navegação pelo calendário;
 - Seleção de dias para vizualiação e gerenciamento;
-- Adicionar agendamentos com: Nome do cliente e tipo do serviço;
+- Adicionar agendamentos com: nome do cliente e tipo do serviço;
 - Editar agendamentos existentes;
 - Excluir agendamentos existentes.
 
