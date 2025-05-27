@@ -34,7 +34,6 @@ Para a construção dessa aplicação é necessário:
 -
 -
 
->>>>>>> 56533fe50799521f06dfeaaf8b0ab20ae7d6d53e
 ## Autores 
 - *Nomes*: Alanna Machado, Eduarda Leal, Kauã Rizzo, Letícia Farias.
 - *Githubs*: [**@AlannaFm**](https://github.com/AlannaFm), [**@eduarda-leal**](https://github.com/eduarda-leal), [**@rizzoka**](https://github.com/rizzoka), [**@leticia-farias**](https://github.com/leticia-farias).
