@@ -88,7 +88,7 @@ function renderEvents() {
       /*content.innerText = `${ev.time} - ${ev.text}`;*/
       content.innerText = `${ev.time} | Cliente: ${ev.text} | Serviço: ${ev.service}`; // <- Aqui é a formatação elegante
 
-      /*content.addEventListener('click', () => editEvent(index));*/
+      content.addEventListener('click', () => editEvent(index));
 
       const deleteBtn = document.createElement('button');
       deleteBtn.innerText = 'x';
