@@ -7,6 +7,13 @@ Este é um sistema web desenvolvido para gerenciamento de agendamentos de um sal
 ![Imagem do Projeto](./assets/readMeImg.png)
 [Vídeo de demonstração](https://www.youtube.com/watch?v=SeuIDDoVideo)
 
+## Funcionalidades
+- Navegação pelo calendário;
+- Seleção de dias para vizualiação e gerenciamento;
+- Adicionar agendamentos com: Nome do cliente e tipo do serviço;
+- Editar agendamentos existentes;
+- Excluir agendamentos existentes.
+
 ## Tecnologias
 Front-end:
 ```shell
@@ -19,16 +26,16 @@ Back-end:
 Java com Spring Boot
 ```
 
-## Funcionalidades
-- Navegação pelo calendário;
-- Seleção de dias para vizualiação e gerenciamento;
-- Adicionar agendamentos com: Nome do cliente e tipo do serviço;
-- Editar agendamentos existentes;
-- Excluir agendamentos existentes.
+## Executando localmente
 
+### Requerimentos
+Para a construção dessa aplicação é necessário:
+- 
+-
+-
 
 ## Autores 
 - *Nomes*: Alanna Machado, Eduarda Leal, Kauã Rizzo, Letícia Farias.
-- *Gith1ubs*: [**@AlannaFm**](https://github.com/AlannaFm), [**@eduarda-leal**](https://github.com/eduarda-leal), [**@rizzoka**](https://github.com/rizzoka), [**@leticia-farias**](https://github.com/leticia-farias).
+- *Githubs*: [**@AlannaFm**](https://github.com/AlannaFm), [**@eduarda-leal**](https://github.com/eduarda-leal), [**@rizzoka**](https://github.com/rizzoka), [**@leticia-farias**](https://github.com/leticia-farias).
 
 - ![Papel Timbrado Fim](./assets/papelTimbradoFim.png)
