@@ -7,6 +7,10 @@ const eventList = document.getElementById('event-list');
 const eventInput = document.getElementById('event-input');
 const eventTime = document.getElementById('event-time');
 const addEventBtn = document.getElementById('add-event');
+const clientNameInput = document.getElementById('event-input'); // Novo input para nome do cliente
+const eventService = document.getElementById('event-service'); //  Pegando o select
+
+
 
 let date = new Date();
 let selectedDate = null;
@@ -81,8 +85,10 @@ function renderEvents() {
 
       const content = document.createElement('div');
       content.className = 'event-content';
-      content.innerText = `${ev.time} - ${ev.text}`;
-      content.addEventListener('click', () => editEvent(index));
+      /*content.innerText = `${ev.time} - ${ev.text}`;*/
+      content.innerText = `${ev.time} | Cliente: ${ev.text} | Serviço: ${ev.service}`; // <- Aqui é a formatação elegante
+
+      /*content.addEventListener('click', () => editEvent(index));*/
 
       const deleteBtn = document.createElement('button');
       deleteBtn.innerText = 'x';
@@ -105,7 +111,7 @@ function deleteEvent(index) {
   renderEvents();
 }
 
-function editEvent(index) {
+/*function editEvent(index) {
   const ev = events[selectedDate][index];
   const newText = prompt('Editar evento:', ev.text);
   const newTime = prompt('Editar horário (HH:MM):', ev.time);
@@ -119,9 +125,30 @@ function editEvent(index) {
 
   saveEvents();
   renderEvents();
+}*/
+
+function editEvent(index) {
+  const ev = events[selectedDate][index];
+  const newText = prompt('Editar nome do cliente:', ev.text);
+  const newTime = prompt('Editar horário (HH:MM):', ev.time);
+  const newService = prompt('Editar serviço:', ev.service || '');
+
+  if (newText !== null && newText.trim() !== '') {
+    ev.text = newText.trim();
+  }
+  if (newTime !== null && /^\d{2}:\d{2}$/.test(newTime)) {
+    ev.time = newTime;
+  }
+  if (newService !== null && newService.trim() !== '') {
+    ev.service = newService.trim();
+  }
+
+  saveEvents();
+  renderEvents();
 }
 
-addEventBtn.addEventListener('click', () => {
+
+/*addEventBtn.addEventListener('click', () => {
   const text = eventInput.value.trim();
   const time = eventTime.value;
 
@@ -146,7 +173,38 @@ addEventBtn.addEventListener('click', () => {
   eventTime.value = '';
   saveEvents();
   renderEvents();
+});*/
+
+addEventBtn.addEventListener('click', () => {
+  if (!selectedDate) {
+    alert('Por favor, selecione um dia no calendário.');
+    return;
+  }
+
+  const time = eventTime.value;
+  const text = eventInput.value.trim();
+  const service = eventService.value;
+
+  if (!time || !text || !service) {
+    alert('Por favor, preencha todos os campos.');
+    return;
+  }
+
+  const event = { time, text, service };
+
+  if (!events[selectedDate]) {
+    events[selectedDate] = [];
+  }
+
+  events[selectedDate].push(event);
+  saveEvents();
+  renderEvents();
+
+  eventInput.value = '';
+  eventTime.value = '';
+  eventService.value = '';
 });
+
 
 prevBtn.addEventListener('click', () => {
   date.setMonth(date.getMonth() - 1);
