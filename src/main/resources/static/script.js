@@ -4,7 +4,7 @@ function addAgendamento() {
     const telefone = document.getElementById("event-tel").value;
     const servico = document.getElementById("event-service").value;
 
-    fetch('/api/agenda', {
+    fetch('http://localhost:8080/a/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ hora, nome, servico })
